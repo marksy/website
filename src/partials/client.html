@@ -1,0 +1,36 @@
+<section class="client">
+
+  <h2>{{jobname}}</h2>
+<!--   <p><a ui-sref="{{latestJob}}">Latest job</a></p>
+  <p><a ui-sref="{{previousJob}}">Previous job</a></p>
+ -->
+  <aside>
+      <h3>Dates:</h3>
+      <ul class="dates">
+        <li ng-repeat="item in dates">
+          <p>{{item.start}} - {{item.end}}</p>
+        </li>
+      </ul>
+
+      <h3>Key skills:</h3>
+      <ul class="skills">
+        <li ng-repeat="item in skills">
+          <p>{{item}}</p>
+        </li>
+      </ul>
+
+  </aside>
+
+  <h3>My role:</h3>
+  <div class="job-description" ng-bind-html="bindThis"></div>
+  <div ng-if="screens.length > 0">
+    <h3>Screenshots:</h3>
+    <ul class="screens">
+      <li ng-repeat="item in screens">
+      <p>{{item.name}}</p>
+        <img ng-src="{{item.url}}" alt="" />
+      </li>
+    </ul>
+  </div>
+
+</section>

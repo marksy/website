@@ -1,0 +1,30 @@
+{
+  "name": "MarksyDevelopmentWebsite",
+  "version": "1.0.0",
+  "description": "Website for Marksy Development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "babel-preset-es2015": "^6.9.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-open": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "node-sass": "^3.8.0",
+    "ui-router": "^1.0.0-alpha.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
