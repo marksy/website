@@ -83,7 +83,15 @@ fandango.controller('WorkController', ['$scope', '$log', 'WorkSubmenuService', f
       name: 'The Frameworks Spark',
       link: 'tfspark',
       startDate: 'October 2016',
-      endDate: 'present',
+      endDate: 'November 2016',
+      vacation: false
+    },
+    {
+      id: 10,
+      name: 'The Tin',
+      link: 'thetin',
+      startDate: 'November 2016',
+      endDate: 'December 2016',
       vacation: false
     }
   ];
