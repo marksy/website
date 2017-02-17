@@ -18,6 +18,9 @@
 	var WorkAlpariController = require('./js/controllers/WorkAlpariController.js');
 	var WorkirisController = require('./js/controllers/WorkirisController.js');
 	var WorkSummerBreakController = require('./js/controllers/WorkSummerBreakController.js');
+	var LottoLogicController = require('./js/controllers/LottoLogicController.js');
+	var TfSparkController = require('./js/controllers/TfSparkController.js');
+	var TheTinController = require('./js/controllers/TheTinController.js');
 
 	var ContactController = require('./js/controllers/ContactController.js');
 
@@ -26,7 +29,7 @@
 
 		$compileProvider.debugInfoEnabled(false);
 		$locationProvider.html5Mode(true);
-    
+
 	    $urlRouterProvider.otherwise('/');
 
 	    $stateProvider
@@ -70,6 +73,21 @@
 	        	controller: 'WorkSummerBreakController',
 	        	templateUrl: 'partials/client.html'
 	        })
+					.state('lotto', {
+						url: '/work/lotto',
+	        	controller: 'LottoLogicController',
+	        	templateUrl: 'partials/client.html'
+					})
+					.state('tfspark', {
+						url: '/work/tfspark',
+	        	controller: 'TfSparkController',
+	        	templateUrl: 'partials/client.html'
+					})
+					.state('thetin', { 
+						url: '/work/the-tin',
+	        	controller: 'TheTinController',
+	        	templateUrl: 'partials/client.html'
+					})
       .state('contact', {
 				url: '/contact',
 				templateUrl: 'partials/contact.html',

@@ -28,7 +28,7 @@
     <ul class="screens">
       <li ng-repeat="item in screens">
       <p>{{item.name}}</p>
-        <img ng-src="{{item.url}}" alt="" />
+        <img ng-src="{{item.url}}" ng-class="{mobile: {{item.mobile}}}" alt="" />
       </li>
     </ul>
   </div>
