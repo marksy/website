@@ -93,6 +93,22 @@ fandango.controller('WorkController', ['$scope', '$log', 'WorkSubmenuService', f
       startDate: 'November 2016',
       endDate: 'December 2016',
       vacation: false
+    },
+    {
+      id: 11,
+      name: 'Potentialife',
+      link: 'potentialife',
+      startDate: 'March 2017',
+      endDate: 'May 2017',
+      vacation: false
+    },
+    {
+      id: 12,
+      name: 'Accenture',
+      link: 'accenture',
+      startDate: 'May 2017',
+      endDate: 'present',
+      vacation: false
     }
   ];
 

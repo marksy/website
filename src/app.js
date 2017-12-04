@@ -21,6 +21,7 @@
 	var LottoLogicController = require('./js/controllers/LottoLogicController.js');
 	var TfSparkController = require('./js/controllers/TfSparkController.js');
 	var TheTinController = require('./js/controllers/TheTinController.js');
+	var PotentialifeController = require('./js/controllers/PotentialifeController.js');
 
 	var ContactController = require('./js/controllers/ContactController.js');
 
@@ -83,9 +84,14 @@
 	        	controller: 'TfSparkController',
 	        	templateUrl: 'partials/client.html'
 					})
-					.state('thetin', { 
+					.state('thetin', {
 						url: '/work/the-tin',
 	        	controller: 'TheTinController',
+	        	templateUrl: 'partials/client.html'
+					})
+					.state('potentialife', {
+						url: '/work/potentialife',
+	        	controller: 'PotentialifeController',
 	        	templateUrl: 'partials/client.html'
 					})
       .state('contact', {

@@ -2,7 +2,7 @@
 
 <!-- {{menuOpen}} -->
 	<ul>
-		<li ng-repeat="company in workset | orderBy: 'id':true " ng-class="{'vacation': company.vacation == true}">
+		<li ng-if="!company.vacation" ng-repeat="company in workset | orderBy: 'id':true " ng-class="{'vacation': company.vacation == true}">
 			<a ui-sref-active="active" ui-sref="{{company.link}}">
 				<h2>{{company.name}}</h2>
 				<p class="date">{{company.startDate}} - {{company.endDate}}</p>
